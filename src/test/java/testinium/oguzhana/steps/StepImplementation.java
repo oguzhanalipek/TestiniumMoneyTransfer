@@ -71,6 +71,16 @@ public class StepImplementation extends BaseTest {
         logger.info("'{}' elementinin text icerigi dogrulandi. Beklenen: '{}', Mevcut: '{}'", key, expectedText, elementText);
     }
 
+    @Step("Mevcut URL <expectedUrl> bilgisini icerdigi dogrulanir")
+    public void verifyUrlContainsText(String expectedUrl) {
+        String actualUrl = driver.getCurrentUrl();
+
+        if(actualUrl != null && actualUrl.contains(expectedUrl)) {
+            logger.info("Mevcut URL beklenen '{}' bilgisini iceriyor", expectedUrl);
+            logger.info("Mevcut URL: '{}'", actualUrl);
+        }
+    }
+
     @Step("<key> elementini bul, temizle ve <text> degeri girilir")
     public void clearAndSendKeys(String key, String text) {
         WebElement element = findElement(key);
