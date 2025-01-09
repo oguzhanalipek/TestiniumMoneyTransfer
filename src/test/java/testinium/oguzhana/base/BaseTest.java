@@ -39,7 +39,7 @@ public class BaseTest {
     EdgeOptions edgeOptions;
 
     String browserName = "chrome";
-    String testURL = "";
+    String testURL = "https://catchylabs-webclient.testinium.com/";
 
     public static final String DEFAULT_DIRECTORY_PATH = "elementValues";
 
