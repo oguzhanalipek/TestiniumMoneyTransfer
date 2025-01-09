@@ -1,6 +1,8 @@
 package testinium.oguzhana.steps;
 
 import com.thoughtworks.gauge.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -16,6 +18,8 @@ public class StepImplementation extends BaseTest {
     public StepImplementation() {
         initMap(getFileList());
     }
+
+    private static final Logger logger = LogManager.getLogger(StepImplementation.class);
 
     private final ElementFinder elementFinder = new ElementFinder();
 

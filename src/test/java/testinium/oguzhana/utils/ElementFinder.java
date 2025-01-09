@@ -1,15 +1,14 @@
 package testinium.oguzhana.utils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import testinium.oguzhana.base.BaseTest;
 
 public class ElementFinder extends BaseTest {
-    protected Logger logger = LoggerFactory.getLogger(getClass());
-
+    private static final Logger logger = LogManager.getLogger(ElementFinder.class);
 
     public By getElementInfoToBy(ElementInfo elementInfo) {
         if (elementInfo == null) {

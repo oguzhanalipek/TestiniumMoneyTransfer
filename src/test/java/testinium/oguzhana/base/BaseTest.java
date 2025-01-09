@@ -12,8 +12,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import testinium.oguzhana.utils.ElementInfo;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -29,9 +29,9 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
     protected static Actions actions;
-    protected Logger logger = LoggerFactory.getLogger(getClass());
+    private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     protected DesiredCapabilities capabilities;
     ChromeOptions chromeOptions;
