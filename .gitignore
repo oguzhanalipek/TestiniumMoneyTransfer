@@ -13,3 +13,11 @@ gauge_bin
 # Gauge - java class target dir
 target
 
+/target
+/web_driver
+.idea/*
+*.iml
+.idea/
+target/*
+
+/logs
