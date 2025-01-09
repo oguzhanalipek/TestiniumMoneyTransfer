@@ -1,63 +1,15 @@
 package testinium.oguzhana.utils;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import testinium.oguzhana.base.BaseTest;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.lang.reflect.Type;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
-public class ElementFinder {
+public class ElementFinder extends BaseTest {
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    public static final String DEFAULT_DIRECTORY_PATH = "elementValues";
-
-    static ConcurrentMap<String, Object> elementMapList = new ConcurrentHashMap<>();
-
-    public static void addElementInfoByKey(String key, ElementInfo elementInfo) {
-        elementMapList.put(key, elementInfo);
-    }
-
-    public void initMap(File[] fileList) {
-        Type elementType = new TypeToken<List<ElementInfo>>() {
-        }.getType();
-        Gson gson = new Gson();
-        List<ElementInfo> elementInfoList = null;
-        for (File file : fileList) {
-            try {
-                elementInfoList = gson
-                        .fromJson(new FileReader(file), elementType);
-                elementInfoList.parallelStream()
-                        .forEach(elementInfo -> elementMapList.put(elementInfo.getKey(), elementInfo));
-            } catch (FileNotFoundException e) {
-                logger.warn(e + " not found");
-            }
-        }
-    }
-
-    public File[] getFileList() {
-        File[] fileList = new File("src/test/resources/" + DEFAULT_DIRECTORY_PATH).listFiles(pathname -> !pathname.isDirectory() && pathname.getName().endsWith(".json"));
-        if (fileList == null) {
-            logger.warn(
-                    "File Directory Is Not Found! Please Check Directory Location. Default Directory Path = {}",
-                    DEFAULT_DIRECTORY_PATH);
-            throw new NullPointerException();
-        }
-        return fileList;
-    }
-
-    public ElementInfo findElementInfoByKey(String key) {
-        return (ElementInfo) elementMapList.get(key);
-    }
 
     public By getElementInfoToBy(ElementInfo elementInfo) {
         if (elementInfo == null) {
@@ -97,7 +49,7 @@ public class ElementFinder {
         }
     }
 
-    WebElement findElement(String key, WebDriver driver, int timeout) {
+    public WebElement findElement(String key, WebDriver driver, int timeout) {
         try {
             WebDriverWait webDriverWait = new WebDriverWait(driver, timeout);
             By infoParam = getElementInfoToBy(findElementInfoByKey(key));
