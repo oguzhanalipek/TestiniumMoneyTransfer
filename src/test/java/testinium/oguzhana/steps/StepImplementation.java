@@ -61,6 +61,16 @@ public class StepImplementation extends BaseTest {
         logger.info("'{}' elementinin sayfada oldugu dogrulandi!", key);
     }
 
+    @Step("<key> elementinin text bilgisini logla")
+    public void logElementText(String key) {
+        if (isElementVisible(key, 10)) {
+            String elementText = findElement(key).getText();
+            logger.info("'{}' elementinin text icerigi: '{}'", key, elementText);
+        } else {
+            Assertions.fail(key + " elementi gorunur olmadi!");
+        }
+    }
+
     @Step("<key> elementinin text iceriginin <expectedText> bilgisine esit oldugu dogrulanir")
     public void verifyElementText(String key, String expectedText) {
         verifyElementIsVisible(key);
@@ -75,7 +85,7 @@ public class StepImplementation extends BaseTest {
     public void verifyUrlContainsText(String expectedUrl) {
         String actualUrl = driver.getCurrentUrl();
 
-        if(actualUrl != null && actualUrl.contains(expectedUrl)) {
+        if (actualUrl != null && actualUrl.contains(expectedUrl)) {
             logger.info("Mevcut URL beklenen '{}' bilgisini iceriyor", expectedUrl);
             logger.info("Mevcut URL: '{}'", actualUrl);
         }
@@ -87,6 +97,13 @@ public class StepImplementation extends BaseTest {
         element.clear();
         element.sendKeys(text);
         logger.info("'{}' elementine '{}' degeri girildi", key, text);
+    }
+
+    @Step("<key> elementini bul ve temizle")
+    public void clearElement(String key) {
+        WebElement element = findElement(key);
+        element.clear();
+        logger.info("'{}' elementi temizlendi", key);
     }
 
     @Step("<key> elementini bekle ve sonra tikla")
