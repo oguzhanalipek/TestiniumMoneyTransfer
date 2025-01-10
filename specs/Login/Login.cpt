@@ -1,0 +1,28 @@
+# Catchylabs login ekraninin acildigi dogrulanir
+* Mevcut URL "https://catchylabs-webclient.testinium.com" bilgisini icerdigi dogrulanir
+* "LoginButton" elementinin gorunur oldugu dogrulanir
+
+# Username alanina <username> bilgisi girilir
+* "LoginUsernameInput" elementini bul, temizle ve <username> degeri girilir
+
+# Password alanina <password> bilgisi girilir
+* "LoginPasswordInput" elementini bul, temizle ve <password> degeri girilir
+
+# Username input alani temizlenir
+* "LoginUsernameInput" elementini bul ve temizle
+
+# Password input alani temizlenir
+* "LoginPasswordInput" elementini bul ve temizle
+
+# Login butonuna tiklanir
+* "LoginButton" elementini bekle ve sonra tikla
+
+# Uygulamaya giris yapildigi dogrulanir
+* "OpenMoneyTransferButton" elementinin gorunur oldugu dogrulanir
+
+# Login ekraninda <errorMessage> icerikli hata mesajinin goruntulendigi dogrulanir
+* "LoginErrorMessage" elementinin gorunur oldugu dogrulanir
+* "LoginErrorMessage" elementinin text iceriginin <errorMessage> bilgisine esit oldugu dogrulanir
+
+# Logout butonuna tiklanir
+* "LogoutButton" elementini bekle ve sonra tikla
