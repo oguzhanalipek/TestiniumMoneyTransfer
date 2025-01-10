@@ -1,0 +1,47 @@
+[
+  {
+    "key": "LoginCatchylabsLogo",
+    "value": "div[class='css-175oi2r r-1mlwlqe r-1udh08x r-417010'] > img",
+    "type": "css"
+  },
+  {
+    "key": "LoginUsernameInput",
+    "value": "input[placeholder='Username']",
+    "type": "css"
+  },
+  {
+    "key": "LoginPasswordInput",
+    "value": "input[placeholder='Password']",
+    "type": "css"
+  },
+  {
+    "key": "LoginButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "LogoutButton",
+    "value": "div[class='css-146c3p1 r-jwli3a r-vw2c0b r-1d4mawv']",
+    "type": "css"
+  },
+  {
+    "key": "LoginErrorMessage",
+    "value": "div[class='css-146c3p1 r-howw7u r-1b43r93']",
+    "type": "css"
+  },
+  {
+    "key": "ChallangeCard",
+    "value": "div[class='css-175oi2r r-1i3z66q r-tuq35u r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "ChallangeCardInfo",
+    "value": "//div[@class='css-175oi2r r-1i3z66q r-tuq35u r-13qz1uu'] / div / text()",
+    "type": "xpath"
+  },
+  {
+    "key": "OpenMoneyTransferButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-11c0sde r-13qz1uu']",
+    "type": "css"
+  }
+]
