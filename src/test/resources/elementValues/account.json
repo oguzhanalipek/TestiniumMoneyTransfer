@@ -1,0 +1,79 @@
+[
+  {
+    "key": "AccountPageBackButton",
+    "value": "div[class='css-146c3p1 r-jwli3a r-vw2c0b r-13hce6t']",
+    "type": "css"
+  },
+  {
+    "key": "MyAccountCard",
+    "value": "div[class='css-175oi2r r-14lw9ot r-z2wwpe r-edyy15']",
+    "type": "css"
+  },
+  {
+    "key": "AccountAmountInfo",
+    "value": "div[class='css-175oi2r r-14lw9ot r-z2wwpe r-edyy15'] > div[class='css-175oi2r'] > div[class='css-175oi2r'] >div[class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93']",
+    "type": "css"
+  },
+  {
+    "key": "AccountNameInfo",
+    "value": "//div[text()='Account name'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AccountTypeInfo",
+    "value": "//div[text()='Account type'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AccountCreationTimeInfo",
+    "value": "//div[text()='Creation time'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AccountTransactionsCard",
+    "value": "div[class='css-175oi2r r-150rngu r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-agouwx']",
+    "type": "css"
+  },
+  {
+    "key": "AccountTransactionInfo",
+    "value": "div[class='css-175oi2r r-150rngu r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-agouwx'] > div[class='css-175oi2r'] > div[class='css-175oi2r']",
+    "type": "css"
+  },
+  {
+    "key": "TransactionsSonIslemeAitAmount",
+    "value": "(//div[@class='css-175oi2r r-13qz1uu'])[1] / div / div / div",
+    "type": "xpath"
+  },
+  {
+    "key": "TransactionsSonIslemeAitSenderBilgisi",
+    "value": "((//div[@class='css-175oi2r r-13qz1uu'])[1] / div / div[@class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93 r-6e0ovw'])[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "TransactionsSonIslemeAitReceiverBilgisi",
+    "value": "((//div[@class='css-175oi2r r-13qz1uu'])[1] / div / div[@class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93 r-6e0ovw'])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "TransactionsSonIslemeAitTimeBilgisi",
+    "value": "((//div[@class='css-175oi2r r-13qz1uu'])[1] / div / div[@class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93 r-6e0ovw'])[3]",
+    "type": "xpath"
+  },
+  {
+    "key": "TransferMoneyButton",
+    "value": "//div[text()='Transfer money']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyButton",
+    "value": "//div[text()='Add money']",
+    "type": "xpath"
+  },
+  {
+    "key": "EditAccountButton",
+    "value": "//div[text()='Edit account']",
+    "type": "xpath"
+  }
+
+]
+
