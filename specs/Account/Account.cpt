@@ -1,0 +1,74 @@
+# Open Money Transfer butonuna tiklanir
+* "OpenMoneyTransferButton" elementini bekle ve sonra tikla
+
+# Account ekraninin acildigi dogrulanir
+* "MyAccountCard" elementinin gorunur oldugu dogrulanir
+
+# Account ekraninin acilmadigi dogrulanir
+* "MyAccountCard" elementinin olmadigi dogrulanir
+
+# Account kartinda bilgilerin goruntulendigi dogrulanir
+* "AccountNameInfo" elementinin gorunur oldugu dogrulanir
+* "AccountNameInfo" elementinin text bilgisini logla
+* "AccountTypeInfo" elementinin gorunur oldugu dogrulanir
+* "AccountTypeInfo" elementinin text bilgisini logla
+* "AccountCreationTimeInfo" elementinin gorunur oldugu dogrulanir
+* "AccountCreationTimeInfo" elementinin text bilgisini logla
+* "AmountInfo" elementinin gorunur oldugu dogrulanir
+* "AmountInfo" elementinin text bilgisini logla
+
+# Account ekraninda Transactions kartinin goruntulendigi dogrulanir
+* "AccountTransactionsCard" elementinin gorunur oldugu dogrulanir
+
+# Transactions kartinda hesap hareketlerinin goruntulendigi dogrulanir
+* "AccountTransactionInfo" elementlerinin oldugu dogrulanir
+
+# Transactions icinde Sender, Receiver, Time, Amount alanlarinin goruntulendigi dogrulanir
+* "TransactionsSonIslemeAitSenderBilgisi" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitSenderBilgisi" elementinin text bilgisini logla
+* "TransactionsSonIslemeAitReceiverBilgisi" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitReceiverBilgisi" elementinin text bilgisini logla
+* "TransactionsSonIslemeAitTimeBilgisi" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitTimeBilgisi" elementinin text bilgisini logla
+* "TransactionsSonIslemeAitAmount" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitAmount" elementinin text bilgisini logla
+
+# Transactions kartinda son hesap hareketine ait Amount bilgisinin <lastTransactionsAmount> oldugu dogrulanir
+* "TransactionsSonIslemeAitAmount" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitAmount" elementinin text iceriginin <lastTransactionsAmount> bilgisine esit oldugu dogrulanir
+
+# Transfer Money butonunun goruntulendigi dogrulanir
+* "TransferMoneyButton" elementinin gorunur oldugu dogrulanir
+
+# Transfer Money butonuna tiklanir
+* "TransferMoneyButton" elementini bekle ve sonra tikla
+
+# Add Money butonunun goruntulendigi dogrulanir
+* "AddMoneyButton" elementinin gorunur oldugu dogrulanir
+
+# Add Money butonuna tiklanir
+* "AddMoneyButton" elementini bekle ve sonra tikla
+
+# Edit Account butonunun goruntulendigi dogrulanir
+* "EditAccountButton" elementinin gorunur oldugu dogrulanir
+
+# Edit Account butonuna tiklanir
+* "EditAccountButton" elementini bekle ve sonra tikla
+
+# Account Name bilgisi hafizaya kaydedilir
+* "AccountNameInfo" elementinin text bilgisini al ve hafizaya kaydet
+
+# Account Amount bilgisi hafizaya kaydedilir
+* "AccountAmountInfo" elementinin text bilgisini al ve hafizaya kaydet
+
+# Bakiyeden <sendAmount> tutarinin dogru sekilde dusuldugu dogrulanir
+* "TransactionsSonIslemeAitAmount" elementinin gorunur oldugu dogrulanir
+* "TransactionsSonIslemeAitAmount" elementinin text bilgisini logla
+* "AccountAmountInfo" elementinin gorunur oldugu dogrulanir
+* "AccountAmountInfo" elementinin degerinin hafizada tutulan onceki degeri ile farkinin <sendAmount> kadar oldugu dogrulanir
+
+# Account Amount bilgisi sifirdan kucuk olamayacagi dogrulanir
+* "AccountAmountInfo" elementinin degerinin sifirdan kucuk olamayacagi dogrulanir
+
+# Hafizaya kaydedilen degeri <artis> arttir
+* Hafizaya kaydedilen degerin formatini int deger olacak sekilde guncelle ve "100" kadar arttir
