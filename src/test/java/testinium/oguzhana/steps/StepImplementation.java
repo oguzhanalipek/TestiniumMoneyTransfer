@@ -155,6 +155,14 @@ public class StepImplementation extends BaseTest {
         logger.info("'{}' elementinin text icerigi dogrulandi. Beklenen: '{}', Mevcut: '{}'", key, expectedText, elementText);
     }
 
+    @Step("<key> elementinin text iceriginin bellege kaydedilen deger ile ayni oldugu dogrulanir")
+    public void confirmIfTempDataEqualsElementText(String key) {
+        String elementText = findElement(key).getText();
+        Assertions.assertEquals(tempData, elementText,
+                "Bellek tutulan deger ile " + key + " elementinin text icerigi ayni degil!");
+        logger.info("Beklenen Sonuc: " + tempData + " - " + "Element Text: " + elementText);
+    }
+
     @Step("<key> elementinin olmadigi dogrulanir")
     public void confirmIfElementNotFound(String key) {
         Assertions.assertFalse(isElementVisible(key, 4),
