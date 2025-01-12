@@ -1,33 +1,135 @@
-## About this template
+# Test Otomasyon Projesi
 
-This is a template to get started with a Gauge project that uses Selenium as the driver to interact with a web browser.
+Bu proje, **Selenium** ve **Gauge (BDD)** kullanılarak geliştirilmiş bir test otomasyon projesidir. **Java** programlama diliyle yazılmış olup, **Maven** proje yapısı kullanılmıştır.
 
-## Installing this template
+---
 
-    gauge --install java_maven_selenium
+## İçindekiler
 
-## Building on top of this template
+- [Proje Hakkında](#proje-hakkında)
+- [Bağımlılıklar](#bağımlılıklar)
+- [Tag Yapılandırması](#tag-yapılandırması)
+- [Kurulum](#kurulum)
+- [Versiyon Bilgileri](#versiyon-bilgileri)
 
-### Defining Specifications
+---
 
-* This template includes a sample specification which opens up a browser and navigates to `Get Started` page of Gauge.
-* Add more specifications on top of sample specification.
+## Proje Hakkında
 
-Read more about [Specifications](http://getgauge.io/documentation/user/current/specifications/README.html)
+Bu proje, web tabanlı uygulamalar için otomatik test senaryoları oluşturmayı ve çalıştırmayı amaçlamaktadır. 
 
-### Writing the implementations
+### Proje Özellikleri:
+- **Selenium WebDriver** kullanılarak web tarayıcıları üzerinde test otomasyonu yapılır.
+- **Gauge BDD** frameworkü kullanılarak test senaryoları yazılır.
+- **Maven** ile bağımlılıklar yönetilir ve proje yapılandırılır.
+- Esnek ve okunabilir bir kod yapısı sunar.
 
-This is where the java implementation of the steps would be implemented. Since this is a Selenium based project, the java implementation would invoke Selenium APIs as required.
+---
 
-_We recommend considering modelling your tests using the [Page Object](https://github.com/SeleniumHQ/selenium/wiki/PageObjects) pattern, and the [Webdriver support](https://github.com/SeleniumHQ/selenium/wiki/PageFactory) for creating them._
+## Bağımlılıklar
 
-- Note that every Gauge step implementation is annotated with a `Step` attribute that takes the Step text pattern as a parameter.
-Read more about [Step implementations in Java](http://getgauge.io/documentation/user/current/test_code/java/java.html)
+Projede kullanılan temel bağımlılıklar aşağıdaki gibidir:
 
-### Execution
+```xml
+<dependencies>
+        <dependency>
+            <groupId>com.thoughtworks.gauge</groupId>
+            <artifactId>gauge-java</artifactId>
+            <version>0.7.3</version>
+            <scope>test</scope>
+        </dependency>
 
-* You can execute the specification as:
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.2</version>
+        </dependency>
+
+    </dependencies>
 ```
-mvn test
+
+Bağımlılıkları eklemek için Maven projenizin `pom.xml` dosyasına yukarıdaki kodu ekleyin.
+
+---
+
+## Tag Yapılandırması
+
+Gauge kullanarak farklı test senaryolarını gruplamak ve yönetmek için etiketleme (tagging) yapısı kullanılabilir. 
+
+Senaryo Başlığı
+---------------
+tags: smokeTest, regresyon
 ```
+Gauge komutları ile belirli etiketlere sahip senaryolar çalıştırılabilir:
+```bash
+gauge run specs --tags "smokeTest"
+```
+
+---
+
+## Kurulum
+
+Projeyi çalıştırmak için aşağıdaki adımları izleyin:
+
+### Gereksinimler
+
+1. **Java** (JDK 8 veya üstü)
+2. **Maven**
+3. **Gauge**
+4. **IDE**
+   
+### Çalıştırma Adımları
+
+1. Bu repoyu klonlayın:
+   ```bash
+   git clone https://github.com/kullanici_adiniz/proje_adi.git
+   ```
+
+2. Proje dizinine gidin:
+   ```bash
+   cd proje_adi
+   ```
+
+3. Maven bağımlılıklarını yükleyin:
+   ```bash
+   mvn clean install
+   ```
+
+4. Testleri çalıştırın:
+   ```bash
+   gauge run specs
+   ```
+
+---
+
+## Versiyon Bilgileri
+
+| Araç                | Versiyon       |
+|---------------------|----------------|
+| Selenium WebDriver  | 3.141.59       |
+| Gauge Framework     | 1.0.7          |
+| Java                | 8 ve üzeri     |
+| Maven               | 3.8.5 ve üzeri |
+| Junit5              | 5.8.2          |
+| Log4j               | 2.17.2         |
+
+---
