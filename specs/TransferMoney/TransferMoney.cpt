@@ -1,0 +1,35 @@
+# Transfer Money pop-up'inin goruntulendigi dogrulanir
+* "TransferMoneyPopup" elementinin gorunur oldugu dogrulanir
+
+# Sender Account dropdowninda hafizaya kaydedilen Account name bilgisini iceren secenegin secili oldugu dogrulanir
+* "SenderAccountSelect" dropdowninda hafizaya kaydedilen Account name bilgisini iceren secenegin secili oldugu dogrulanir
+
+# Receiver Account dropdowninda varsayilan olarak bir secenek oldugu dogrulanir
+* "ReceiverAccountSelect" dropdowninda varsayilan olarak secili bir secenek oldugu dogrulanir ve secili olan secenek loglanir
+
+# Amount alani temizlenir
+* "TransferMoneyAmountInput" elementini bul ve temizle
+
+# Send butonunun devre disi oldugu dogrulanir
+* "TransferMoneySendButtonDisabled" elementinin gorunur oldugu dogrulanir
+* "TransferMoneySendButtonDisabled" elementinin "aria-disabled" attribute iceriginin "true" oldugu dogrulanir
+
+# Send butonunun aktif oldugu dogrulanir
+* "TransferMoneySendButton" elementinin gorunur oldugu dogrulanir
+* "TransferMoneySendButton" elementinin "aria-disabled" attribute alaninin olmadigi dogrulanir
+
+# Send butonuna tiklanir
+* "TransferMoneySendButton" elementini bekle ve sonra tikla
+
+# Transfer Money ekraninda Amount alanina <transferMoneyAmount> degeri girilir
+* "TransferMoneyAmountInput" elementini bul, temizle ve <transferMoneyAmount> degeri girilir
+
+# Transfer Money ekraninda Amount alanina hafizaya kaydedilen deger girilir
+* "TransferMoneyAmountInput" elementini bul, temizle ve kaydedilen degeri yaz
+
+# Transfer Money ekraninda Amount alanina eksi deger girilemedigi dogrulanir
+* "TransferMoneyAmountInput" elementinin gorunur oldugu dogrulanir
+* "TransferMoneyAmountInput" elementinin "value" attribute degerinin negatif olmadigi dogrulanir
+
+# Receiver Account dropdowninda text icerigi <ReceiverAccount> olan secenek secilir
+* "ReceiverAccountSelect" drop down menusunden text icerigi <ReceiverAccount> olan secenek secilir
