@@ -3,6 +3,8 @@
 
 # Account ekraninin acildigi dogrulanir
 * "MyAccountCard" elementinin gorunur oldugu dogrulanir
+* "TransferMoneyButton" elementi tiklanabilir olana kadar bekle
+* "2" saniye bekle
 
 # Account ekraninin acilmadigi dogrulanir
 * "MyAccountCard" elementinin olmadigi dogrulanir
@@ -14,8 +16,8 @@
 * "AccountTypeInfo" elementinin text bilgisini logla
 * "AccountCreationTimeInfo" elementinin gorunur oldugu dogrulanir
 * "AccountCreationTimeInfo" elementinin text bilgisini logla
-* "AmountInfo" elementinin gorunur oldugu dogrulanir
-* "AmountInfo" elementinin text bilgisini logla
+* "AccountAmountInfo" elementinin gorunur oldugu dogrulanir
+* "AccountAmountInfo" elementinin text bilgisini logla
 
 # Account ekraninda Transactions kartinin goruntulendigi dogrulanir
 * "AccountTransactionsCard" elementinin gorunur oldugu dogrulanir
@@ -58,6 +60,10 @@
 # Account Name bilgisi hafizaya kaydedilir
 * "AccountNameInfo" elementinin text bilgisini al ve hafizaya kaydet
 
+# Account Name bilgisinin <accountName> oldugu dogurlanir
+* "TransferMoneyButton" elementi tiklanabilir olana kadar bekle
+* "AccountNameInfo" elementinin text iceriginin <accountName> bilgisine esit oldugu dogrulanir
+
 # Account Amount bilgisi hafizaya kaydedilir
 * "AccountAmountInfo" elementinin text bilgisini al ve hafizaya kaydet
 
@@ -70,5 +76,8 @@
 # Account Amount bilgisi sifirdan kucuk olamayacagi dogrulanir
 * "AccountAmountInfo" elementinin degerinin sifirdan kucuk olamayacagi dogrulanir
 
-# Hafizaya kaydedilen degeri <artis> arttir
-* Hafizaya kaydedilen degerin formatini int deger olacak sekilde guncelle ve "100" kadar arttir
+# Hafizaya kaydedilen Amount degerini <addMoneyArtis> arttir
+* Hafizaya kaydedilen degerin formatini double deger olacak sekilde guncelle <addMoneyArtis> kadar arttir ve kaydet
+
+# Add Money isleminde girilen degerin bakiyeye eklendigi dogrulanir
+* "AccountAmountInfo" elementinin text iceriginin bellege kaydedilen deger ile ayni oldugu dogrulanir
