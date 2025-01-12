@@ -9,7 +9,7 @@ Edit Account
      
 Account Name Bilgisinin Güncellenmesi
 -------------------------------------
-tags: smokeTest & regresyon
+tags: smokeTest, regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
