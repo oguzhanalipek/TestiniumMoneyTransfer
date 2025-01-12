@@ -328,6 +328,7 @@ Geçerli Kart Bilgileri ile Eksi Değer Girildiğinde İşlem Yapılamadığın�
 
 Geçerli Kart Bilgileri ile Yapılan İşlem Sonucunda Tutarın Bakiyeye Eklendiğinin Doğrulanması
 ---------------------------------------------------------------------------------------------
+tags: smokeTest
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir

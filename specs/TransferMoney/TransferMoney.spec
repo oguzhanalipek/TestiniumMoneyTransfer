@@ -95,6 +95,7 @@ Amount Alanına 999999999 Üzerinde Değer Girildiğinde Geçersiz Olduğu ve SE
 
 Para Transferinin Başarıyla Gerçekleştiği Son Hesap Hareketlerinde Doğrulanması
 -------------------------------------------------------------------------------
+tags: smokeTest
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -111,6 +112,7 @@ Para Transferinin Başarıyla Gerçekleştiği Son Hesap Hareketlerinde Doğrula
 
 Para Transferi Sonrasinda Gönderilen Tutarin Bakiyeden Doğru Şekilde Düştüğünün Doğrulanması
 --------------------------------------------------------------------------------------------
+tags: smokeTest
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -128,6 +130,7 @@ Para Transferi Sonrasinda Gönderilen Tutarin Bakiyeden Doğru Şekilde Düştü
 
 Farklı Receiver Account Seçenekleri ile Para Transferi Yapılması
 ----------------------------------------------------------------
+tags: smokeTest
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir

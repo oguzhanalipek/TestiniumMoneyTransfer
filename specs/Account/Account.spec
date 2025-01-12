@@ -3,6 +3,7 @@ Account
      
 Mevcut Account'a Giriş Yapılması
 --------------------------------
+tags: smokeTest
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
