@@ -11,7 +11,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import testinium.oguzhana.base.BaseTest;
 import testinium.oguzhana.utils.ElementFinder;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.List;
+import java.util.Locale;
 
 public class StepImplementation extends BaseTest {
 
@@ -112,20 +115,21 @@ public class StepImplementation extends BaseTest {
         }
     }
 
-    @Step("Hafizaya kaydedilen degerin formatini int deger olacak sekilde guncelle ve <deger> kadar arttir")
-    public void updateTempDataFormatAndIncrease(int deger) {
+    @Step("Hafizaya kaydedilen degerin formatini double deger olacak sekilde guncelle <deger> kadar arttir ve kaydet")
+    public void updateTempDataFormatAndIncrease(double deger) {
         try {
-            // Hafızadaki değeri al
             String tempDataValue = tempData;
 
-            // Sayı formatını double'a çevir
-            double numericValue = Double.parseDouble(tempDataValue);
+            double numericValue = Double.parseDouble(tempDataValue.replace(",", ""));
 
-            // Değeri arttır
             numericValue += deger;
 
-            // Güncellenen değeri int'e çevir ve hafızaya kaydet
-            tempData = String.valueOf((int) numericValue);
+            DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+            symbols.setGroupingSeparator(',');
+            symbols.setDecimalSeparator('.');
+            DecimalFormat decimalFormat = new DecimalFormat("#,##0.00", symbols);
+
+            tempData = decimalFormat.format(numericValue);
 
             logger.info("Hafizaya kaydedilen bilgi guncellendi ve " + deger + " kadar arttirildi: " + tempData);
         } catch (Exception e) {
