@@ -1,0 +1,16 @@
+# Edit Account pop-up'inin goruntulendigi dogrulanir
+* "EditAccountPopup" elementinin gorunur oldugu dogrulanir
+
+# Edit Account Name alanina <editAccountName> bilgisi girilir
+* "EditAccountAccountNameInput" elementini bul, temizle ve <editAccountName> degeri girilir
+
+# Edit Account ekraninda Update butonuna tiklanir
+* "EditAccountUpdateButton" elementini bekle ve sonra tikla
+
+# Edit Account ekraninda Account Name alani temizlenir
+* "EditAccountAccountNameInput" elementini bul, temizle ve "a" degeri girilir
+* "EditAccountAccountNameInput" elementine BACKSPACE keyi yolla
+
+# Update butonunun devre disi oldugu dogrulanir
+* "EditAccountUpdateButtonDisabled" elementinin gorunur oldugu dogrulanir
+* "EditAccountUpdateButtonDisabled" elementinin "aria-disabled" attribute iceriginin "true" oldugu dogrulanir
