@@ -1,0 +1,59 @@
+# Add Money pop-up'inin goruntulendigi dogrulanir
+* "AddMoneyPopup" elementinin gorunur oldugu dogrulanir
+
+# Card Number alanina <cardNumber> bilgisi girilir
+* "AddMoneyCardNumberInput" elementini bul, temizle ve <cardNumber> degeri girilir
+
+# Card Number alaninda <warningMessage> uyarisinin görüntülendigi dogrulanir
+* "AddMoneyCardNumberErrorMessage" elementinin gorunur oldugu dogrulanir
+* "AddMoneyCardNumberErrorMessage" elementinin text iceriginin <warningMessage> bilgisine esit oldugu dogrulanir
+
+# Card Holder alaninda <warningMessage> uyarisinin görüntülendigi dogrulanir
+"2" saniye bekle
+* "AddMoneyCardHolderInputErrorMessage" elementinin gorunur oldugu dogrulanir
+* "AddMoneyCardHolderInputErrorMessage" elementinin text iceriginin <warningMessage> bilgisine esit oldugu dogrulanir
+
+# Expiry Date alaninda <warningMessage> uyarisinin görüntülendigi dogrulanir
+* "AddMoneyExpiryDateInputErrorMessage" elementinin gorunur oldugu dogrulanir
+* "AddMoneyExpiryDateInputErrorMessage" elementinin text iceriginin <warningMessage> bilgisine esit oldugu dogrulanir
+
+# CVV alaninda <warningMessage> uyarisinin görüntülendigi dogrulanir
+* "AddMoneyCVVInputErrorMessage" elementinin gorunur oldugu dogrulanir
+* "AddMoneyCVVInputErrorMessage" elementinin text iceriginin <warningMessage> bilgisine esit oldugu dogrulanir
+
+# Add Money Amount alaninda <warningMessage> uyarisinin görüntülendigi dogrulanir
+* "AddMoneyAmountInputErrorMessage" elementinin gorunur oldugu dogrulanir
+* "AddMoneyAmountInputErrorMessage" elementinin text iceriginin <warningMessage> bilgisine esit oldugu dogrulanir
+
+# Add Money pop-up'inda carpi ikonuna tiklanir
+* "AddMoneyPopUpCarpiIkonButton" elementini bekle ve sonra tikla
+
+# Card Number alaninda uyari mesajinin olmadigi dogrulanir
+* "AddMoneyCardNumberErrorMessage" elementinin olmadigi dogrulanir
+
+# Card Holder alaninda uyari mesajinin olmadigi dogrulanir
+* "AddMoneyCardHolderInputErrorMessage" elementinin olmadigi dogrulanir
+
+# Add Money Amount alaninda uyari mesajinin olmadigi dogrulanir
+* "AddMoneyAmountInputErrorMessage" elementinin olmadigi dogrulanir
+
+# Card Holder alanina <cardHolder> bilgisi girilir
+* "AddMoneyCardHolderInput" elementini bul, temizle ve <cardHolder> degeri girilir
+
+# Expiry Date alanina <expiryDate> bilgisi girilir
+* "AddMoneyExpiryDateInput" elementini bul, temizle ve <expiryDate> degeri girilir
+
+# CVV alanina <cvv> bilgisi girilir
+* "AddMoneyCvvInput" elementini bul, temizle ve <cvv> degeri girilir
+
+# Add Money Amount alanina <addMoneyAmount> bilgisi girilir
+* "AddMoneyAmountInput" elementini bul, temizle ve <addMoneyAmount> degeri girilir
+
+# Add Money ekraninda Add butonuna tiklanir
+* "AddMoneyAddButton" elementini bekle ve sonra tikla
+
+# Gecerli kart bilgileri girilir
+* "AddMoneyCardNumberInput" elementini bul, temizle ve "1234567812345678" degeri girilir
+* "AddMoneyCardHolderInput" elementini bul, temizle ve "Otomasyon" degeri girilir
+* "AddMoneyExpiryDateInput" elementini bul, temizle ve "0125" degeri girilir
+* "AddMoneyCvvInput" elementini bul, temizle ve "123" degeri girilir
