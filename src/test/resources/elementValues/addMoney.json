@@ -1,0 +1,89 @@
+[
+  {
+    "key": "AddMoneyPopup",
+    "value": "div[class='css-175oi2r r-1awozwy r-14lw9ot r-1xfd6ze r-1rr9as1 r-129l8ac r-1ik5qf4 r-e7q0ms']",
+    "type": "css"
+  },
+  {
+    "key": "AddMoneyCardNumberInput",
+    "value": "//div[text()='Card number'] / following-sibling::input",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyCardHolderInput",
+    "value": "//div[text()='Card holder'] / following-sibling::input[@class='css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyExpiryDateInput",
+    "value": "//div[text()='Expiry date'] / following-sibling::input[@class='css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyCvvInput",
+    "value": "//div[text()='CVV'] / following-sibling::input[@class='css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyAmountInput",
+    "value": "//div[text()='Amount'] / following-sibling::input[@class='css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyAddButton",
+    "value": "div[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu']",
+    "type": "css"
+  },
+  {
+    "key": "AddMoneyCardNumberErrorMessage",
+    "value": "//div[text()='Card number'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyCardHolderInputErrorMessage",
+    "value": "//div[text()='Card holder'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyExpiryDateInputErrorMessage",
+    "value": "//div[text()='Expiry date'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyCVVInputErrorMessage",
+    "value": "//div[text()='CVV'] / following-sibling::div",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyAmountInputErrorMessage",
+    "value": "//div[text()='Amount'] / following-sibling::div[@class='css-146c3p1 r-yv33h5 r-1jb9un0 r-1enofrn r-14gqq1x']",
+    "type": "xpath"
+  },
+  {
+    "key": "AddMoneyPopUpCarpiIkonButton",
+    "value": "div[class='css-146c3p1 r-lrvibr r-1loqt21']",
+    "type": "css"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": "css"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": "css"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": "css"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": "css"
+  }
+
+]
+
