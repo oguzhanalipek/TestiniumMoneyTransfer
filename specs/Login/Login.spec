@@ -1,7 +1,7 @@
 Login
 =====
 
-Basarili Login
+Başarılı Login
 --------------
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
@@ -9,7 +9,7 @@ Basarili Login
 * Login butonuna tiklanir
 * Uygulamaya giris yapildigi dogrulanir
 
-Kullanici Adi ve Sifre Alanlari Bos Birakilarak Login Olmaya Calisildiginda Uyari Mesajinin Goruntulenmesi
+Kullanici Adi ve Şifre Alanları Boş Bırakılarak Login Olmaya Çalışıldığında Uyarı Mesajinin Görüntülenmesi
 ----------------------------------------------------------------------------------------------------------
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username input alani temizlenir
@@ -17,7 +17,7 @@ Kullanici Adi ve Sifre Alanlari Bos Birakilarak Login Olmaya Calisildiginda Uyar
 * Login butonuna tiklanir
 * Login ekraninda "Username or Password Invalid!" icerikli hata mesajinin goruntulendigi dogrulanir
 
-Gecersiz Kullanici Adi ve Sifre ile Login Olmaya Calisildiginda Uyari Mesajinin Goruntulenmesi
+Geçersiz Kullanici Adi ve Şifre ile Login Olmaya Çalışıldığında Uyarı Mesajinin Görüntülenmesi
 ----------------------------------------------------------------------------------------------
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "gecersiz" bilgisi girilir
@@ -25,7 +25,7 @@ Gecersiz Kullanici Adi ve Sifre ile Login Olmaya Calisildiginda Uyari Mesajinin 
 * Login butonuna tiklanir
 * Login ekraninda "Username or Password Invalid!" icerikli hata mesajinin goruntulendigi dogrulanir
 
-Basarili Logout
+Başarılı Logout
 ---------------
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
