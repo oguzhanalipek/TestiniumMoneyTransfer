@@ -342,6 +342,7 @@ public class StepImplementation extends BaseTest {
         value = value.replace(",", "");
         return Double.parseDouble(value);
     }
+
     @Step("<key> elementinin degerinin hafizada tutulan onceki degeri ile farkinin <fark> kadar oldugu dogrulanir")
     public void verifyDifferenceBetweenPreviousAndCurrentValue(String key, double fark) {
         try {
@@ -417,6 +418,26 @@ public class StepImplementation extends BaseTest {
             logger.info(key + " elementinin degeri sifirdan kucuk degil. Deger: " + elementValue);
         } catch (Exception e) {
             throw new RuntimeException("Element degeri kontrol edilirken bir hata olustu: " + e.getMessage(), e);
+        }
+    }
+
+    @Step("<key> elementine BACKSPACE keyi yolla")
+    public void sendKeyToElementBACKSPACE(String key) {
+        findElement(key).sendKeys(Keys.BACK_SPACE);
+        logger.info(key + " elementine BACKSPACE keyi yollandi!");
+    }
+
+    @Step("<key> elementi tiklanabilir olana kadar bekle")
+    public void waitUntilElementIsClickable(String key) {
+        try {
+            WebElement element = findElement(key);
+
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+
+            logger.info(key + " elementi tiklanabilir hale geldi.");
+        } catch (Exception e) {
+            throw new RuntimeException(key + " elementi tiklanabilir hale gelmedi: " + e.getMessage(), e);
         }
     }
 }
