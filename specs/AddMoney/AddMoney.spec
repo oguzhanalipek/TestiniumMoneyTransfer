@@ -32,6 +32,7 @@ Card Number, Card Holder, Expiry Date, CVV ve Amount Alanlarının Görüntülen
 
 Card Number Alanına 16 Haneden Az Değer Girildiğinde Uyarının Görüntülendiğinin Doğrulanması
 --------------------------------------------------------------------------------------------
+tags: regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -159,6 +160,7 @@ Expiry Date Alanına 4 Karakterden Az Değer Girildiğinde Uyarının Görüntü
 
 Expiry Date Alanının Ay Kısmına 12'den Büyük Değer Girildiğinde Uyarının Görüntülendiğinin Doğrulanması
 -------------------------------------------------------------------------------------------------------
+tags: regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -173,6 +175,7 @@ Expiry Date Alanının Ay Kısmına 12'den Büyük Değer Girildiğinde Uyarın�
 
 Expiry Date Alanının Yıl Kısmına Geçmiş Tarih Değeri Girildiğinde Uyarının Görüntülendiğinin Doğrulanması
 ---------------------------------------------------------------------------------------------------------
+tags: regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -243,6 +246,7 @@ CVV Alanı Boş Bırakıldığında Uyarının Görüntülendiğinin Doğrulanma
 
 Amount Alanina Özel Karakter Girildiğinde Uyarinin Görüntülendiğinin Doğrulanması
 ---------------------------------------------------------------------------------
+tags: regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -257,6 +261,7 @@ Amount Alanina Özel Karakter Girildiğinde Uyarinin Görüntülendiğinin Doğr
 
 Amount Alanina Eksi Değer Girildiğinde Uyarinin Görüntülendiğinin Doğrulanması
 ------------------------------------------------------------------------------
+tags: regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -328,7 +333,7 @@ Geçerli Kart Bilgileri ile Eksi Değer Girildiğinde İşlem Yapılamadığın�
 
 Geçerli Kart Bilgileri ile Yapılan İşlem Sonucunda Tutarın Bakiyeye Eklendiğinin Doğrulanması
 ---------------------------------------------------------------------------------------------
-tags: smokeTest
+tags: smokeTest & regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir

@@ -3,7 +3,7 @@ Login
 
 Başarılı Login
 --------------
-tags: smokeTest
+tags: smokeTest & regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
@@ -28,7 +28,7 @@ Geçersiz Kullanici Adi ve Şifre ile Login Olmaya Çalışıldığında Uyarı 
 
 Başarılı Logout
 ---------------
-tags: smokeTest
+tags: smokeTest & regresyon
 * Catchylabs login ekraninin acildigi dogrulanir
 * Username alanina "oguzhan.alipek" bilgisi girilir
 * Password alanina "Oa426336" bilgisi girilir
